@@ -1,0 +1,10 @@
+.github
+node_modules
+src
+.gitignore
+.prettierignore
+eslint.config.js
+tsconfig.json
+tsconfig.tsbuildinfo
+yarn.lock
+.vscode
