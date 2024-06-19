@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: yarn
-      - run: yarn add typeorm@${{ matrix.typeorm-version }}
+      - run: yarn add -D typeorm@${{ matrix.typeorm-version }}
       - run: yarn test
         env:
           CI: true
