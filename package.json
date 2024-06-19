@@ -1,6 +1,6 @@
 {
   "name": "typeorm-error-handler",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.2",
   "description": "enter your description",
   "main": "build/index.min.js",
   "typings": "build/index.d.ts",
@@ -15,7 +15,7 @@
     "prestart": "yarn build",
     "start": "node build/index.js",
     "build": "tsc -p tsconfig.json && del build/*.min.js && uglifyjs-folder build -eo build",
-    "prepublish": "yarn build && del \"build/*.js\" \"!build/*.min.js\"",
+    "prepublish": "yarn build && del \"build/*.js\" \"!build/*.min.js\" && del tsconfig.tsbuildinfo",
     "test": "jest",
     "fix": "yarn fix:lint ; yarn fix:prettier",
     "fix:prettier": "prettier \"src/**/*.ts\" --write",
