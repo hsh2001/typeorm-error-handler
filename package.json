@@ -12,10 +12,11 @@
     "handler"
   ],
   "scripts": {
-    "prestart": "npm run build",
+    "prestart": "yarn build",
     "start": "node build/index.js",
     "build": "tsc -p tsconfig.json",
-    "fix": "npm run fix:lint ; npm run fix:prettier",
+    "test": "jest",
+    "fix": "yarn fix:lint ; yarn fix:prettier",
     "fix:prettier": "prettier \"src/**/*.ts\" --write",
     "fix:lint": "eslint --fix",
     "watch:build": "tsc -p tsconfig.json -w"
@@ -23,9 +24,11 @@
   "devDependencies": {
     "@eslint/js": "^9.5.0",
     "@types/eslint__js": "^8.42.3",
+    "@types/jest": "^29.5.12",
     "@types/node": "^20.14.5",
     "eslint": "^9.5.0",
     "gh-pages": "6.1.1",
+    "jest": "^29.7.0",
     "prettier": "^3.3.2",
     "reflect-metadata": "^0.2.2",
     "standard-version": "9.5.0",
