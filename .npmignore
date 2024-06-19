@@ -7,3 +7,4 @@ eslint.config.js
 tsconfig.json
 tsconfig.tsbuildinfo
 yarn.lock
+.vscode
