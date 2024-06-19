@@ -15,7 +15,7 @@
     "prestart": "yarn build",
     "start": "node build/index.js",
     "build": "tsc -p tsconfig.json && del build/*.min.js && uglifyjs-folder build -eo build",
-    "prepublish": "yarn build && del \"build/*.js\" \"!build/*.min.js\" && del tsconfig.tsbuildinfo",
+    "prepublish": "del tsconfig.tsbuildinfo && yarn build && del \"build/*.js\" \"!build/*.min.js\" && del tsconfig.tsbuildinfo",
     "test": "jest",
     "fix": "yarn fix:lint ; yarn fix:prettier",
     "fix:prettier": "prettier \"src/**/*.ts\" --write",
