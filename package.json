@@ -23,6 +23,9 @@
     "watch:build": "tsc -p tsconfig.json -w"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
     "@eslint/js": "^9.5.0",
     "@types/eslint__js": "^8.42.3",
     "@types/jest": "^29.5.12",
@@ -31,10 +34,13 @@
     "eslint": "^9.5.0",
     "gh-pages": "6.1.1",
     "jest": "^29.7.0",
+    "mysql2": "^3.10.1",
     "prettier": "^3.3.2",
     "reflect-metadata": "^0.2.2",
     "standard-version": "9.5.0",
+    "ts-jest": "^29.1.5",
     "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
     "typeorm": "^0.3.20",
     "typescript": "^5.4.5",
     "typescript-eslint": "^7.13.1",

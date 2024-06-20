@@ -9,3 +9,6 @@ tsconfig.tsbuildinfo
 yarn.lock
 .vscode
 renovate.json
+build/_test
+babel.config.js
+jest.config.js
