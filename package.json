@@ -37,7 +37,7 @@
     "ts-node": "^10.9.2",
     "typeorm": "^0.3.20",
     "typescript": "^5.4.5",
-    "typescript-eslint": "^7.13.1",
+    "typescript-eslint": "^8.0.0",
     "uglifyjs-folder": "^3.3.0"
   },
   "peerDependencies": {
